@@ -1,0 +1,11 @@
+InCense
+
+InCense is a research kit to facilitate behavioral data gathering from
+populations of mobile phone users. It includes a mobile application,
+a context database and a desktop graphic environment. The mobile
+application gathers, preprocesses and sends data to the context database.
+The desktop graphic environment simplifies the creation of a new study
+and the selection of sensors and filters of data to be used in the mobile
+application.
+
+Moises Perez (incense.cicese [at] gmail [dot] com)

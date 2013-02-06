@@ -1,0 +1,1534 @@
+<?xml version="1.0" ?>
+
+<knowledge_base
+	xmlns="http://protege.stanford.edu/xml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://protege.stanford.edu/xml http://protege.stanford.edu/xml/schema/protege.xsd">
+
+	<class>
+		<name>:THING</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+	</class>
+
+	<class>
+		<name>:SYSTEM-CLASS</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>:THING</superclass>
+	</class>
+
+	<class>
+		<name>:STANDARD-CLASS</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>:CLASS</superclass>
+		<template_slot>:ROLE</template_slot>
+		<template_slot>:DOCUMENTATION</template_slot>
+		<template_slot>:SLOT-CONSTRAINTS</template_slot>
+		<template_slot>:ROLE</template_slot>
+		<template_slot>:DOCUMENTATION</template_slot>
+		<template_slot>:SLOT-CONSTRAINTS</template_slot>
+		<template_slot>:ROLE</template_slot>
+		<template_slot>:DOCUMENTATION</template_slot>
+		<template_slot>:SLOT-CONSTRAINTS</template_slot>
+		<template_slot>:ROLE</template_slot>
+		<template_slot>:DOCUMENTATION</template_slot>
+		<template_slot>:SLOT-CONSTRAINTS</template_slot>
+	</class>
+
+	<class>
+		<name>:STANDARD-SLOT</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>:SLOT</superclass>
+		<template_slot>:DOCUMENTATION</template_slot>
+		<template_slot>:SLOT-CONSTRAINTS</template_slot>
+		<template_slot>:SLOT-MAXIMUM-CARDINALITY</template_slot>
+		<template_slot>:SLOT-MINIMUM-CARDINALITY</template_slot>
+		<template_slot>:SLOT-NUMERIC-MAXIMUM</template_slot>
+		<template_slot>:SLOT-NUMERIC-MINIMUM</template_slot>
+		<template_slot>:SLOT-INVERSE</template_slot>
+		<template_slot>:SLOT-DEFAULTS</template_slot>
+		<template_slot>:SLOT-VALUES</template_slot>
+		<template_slot>:ASSOCIATED-FACET</template_slot>
+		<template_slot>:DIRECT-SUBSLOTS</template_slot>
+		<template_slot>:DIRECT-SUPERSLOTS</template_slot>
+		<template_slot>:DOCUMENTATION</template_slot>
+		<template_slot>:SLOT-CONSTRAINTS</template_slot>
+		<template_slot>:SLOT-MAXIMUM-CARDINALITY</template_slot>
+		<template_slot>:SLOT-MINIMUM-CARDINALITY</template_slot>
+		<template_slot>:SLOT-NUMERIC-MAXIMUM</template_slot>
+		<template_slot>:SLOT-NUMERIC-MINIMUM</template_slot>
+		<template_slot>:SLOT-INVERSE</template_slot>
+		<template_slot>:SLOT-DEFAULTS</template_slot>
+		<template_slot>:SLOT-VALUES</template_slot>
+		<template_slot>:ASSOCIATED-FACET</template_slot>
+		<template_slot>:DIRECT-SUBSLOTS</template_slot>
+		<template_slot>:DIRECT-SUPERSLOTS</template_slot>
+		<template_slot>:DOCUMENTATION</template_slot>
+		<template_slot>:SLOT-CONSTRAINTS</template_slot>
+		<template_slot>:SLOT-MAXIMUM-CARDINALITY</template_slot>
+		<template_slot>:SLOT-MINIMUM-CARDINALITY</template_slot>
+		<template_slot>:SLOT-NUMERIC-MAXIMUM</template_slot>
+		<template_slot>:SLOT-NUMERIC-MINIMUM</template_slot>
+		<template_slot>:SLOT-INVERSE</template_slot>
+		<template_slot>:SLOT-DEFAULTS</template_slot>
+		<template_slot>:SLOT-VALUES</template_slot>
+		<template_slot>:ASSOCIATED-FACET</template_slot>
+		<template_slot>:DIRECT-SUBSLOTS</template_slot>
+		<template_slot>:DIRECT-SUPERSLOTS</template_slot>
+		<template_slot>:DOCUMENTATION</template_slot>
+		<template_slot>:SLOT-CONSTRAINTS</template_slot>
+		<template_slot>:SLOT-MAXIMUM-CARDINALITY</template_slot>
+		<template_slot>:SLOT-MINIMUM-CARDINALITY</template_slot>
+		<template_slot>:SLOT-NUMERIC-MAXIMUM</template_slot>
+		<template_slot>:SLOT-NUMERIC-MINIMUM</template_slot>
+		<template_slot>:SLOT-INVERSE</template_slot>
+		<template_slot>:SLOT-DEFAULTS</template_slot>
+		<template_slot>:SLOT-VALUES</template_slot>
+		<template_slot>:ASSOCIATED-FACET</template_slot>
+		<template_slot>:DIRECT-SUBSLOTS</template_slot>
+		<template_slot>:DIRECT-SUPERSLOTS</template_slot>
+	</class>
+
+	<class>
+		<name>:DIRECTED-BINARY-RELATION</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>:RELATION</superclass>
+		<template_slot>:FROM</template_slot>
+		<template_slot>:TO</template_slot>
+		<template_slot>:FROM</template_slot>
+		<template_slot>:TO</template_slot>
+		<template_slot>:FROM</template_slot>
+		<template_slot>:TO</template_slot>
+	</class>
+
+	<class>
+		<name>Sensor-Filter  Relation</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>:DIRECTED-BINARY-RELATION</superclass>
+		<template_facet_value>
+			<slot_reference>:FROM</slot_reference>
+			<facet_reference>:VALUE-TYPE</facet_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">CapturingModule</value>
+		</template_facet_value>
+		<template_facet_value>
+			<slot_reference>:TO</slot_reference>
+			<facet_reference>:VALUE-TYPE</facet_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">CapturingModule</value>
+		</template_facet_value>
+	</class>
+
+	<class>
+		<name>ProjectSession</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>:THING</superclass>
+		<template_slot>INCENSE_EXECUTION_MODEL</template_slot>
+		<template_slot>Name</template_slot>
+		<template_slot>PROJECT_SESSION</template_slot>
+	</class>
+
+	<class>
+		<name>CapturingModule</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>ProjectSession</superclass>
+		<template_slot>assembleData_into</template_slot>
+	</class>
+
+	<class>
+		<name>Filter</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>CapturingModule</superclass>
+		<template_slot>periodTime</template_slot>
+		<template_slot>sampleFrequency</template_slot>
+		<template_slot>triggered</template_slot>
+		<template_slot>configuration_var</template_slot>
+	</class>
+
+	<class>
+		<name>VectorMagFilter</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Filter</superclass>
+		<template_slot>vectorMagFilter_Relations</template_slot>
+	</class>
+
+	<class>
+		<name>ActivityCountsFilter</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Filter</superclass>
+		<template_slot>activityCounts_Relations</template_slot>
+	</class>
+
+	<class>
+		<name>StepsFilter</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Filter</superclass>
+		<template_facet_value>
+			<slot_reference>configuration_var</slot_reference>
+			<facet_reference>:DEFAULTS</facet_reference>
+			<value value_type="simple_instance">OntoIncense_Class110</value>
+		</template_facet_value>
+	</class>
+
+	<class>
+		<name>Sensor</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>CapturingModule</superclass>
+		<template_slot>periodTime</template_slot>
+		<template_slot>sampleFrequency</template_slot>
+		<template_slot>triggered</template_slot>
+	</class>
+
+	<class>
+		<name>AccelerometerSensor</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Sensor</superclass>
+		<template_slot>acc_Relations</template_slot>
+	</class>
+
+	<class>
+		<name>AudioSensor</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Sensor</superclass>
+		<template_slot>audioSensor_Relations</template_slot>
+	</class>
+
+	<class>
+		<name>BluetoothSensor</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Sensor</superclass>
+	</class>
+
+	<class>
+		<name>BatteryLevelSensor</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Sensor</superclass>
+	</class>
+
+	<class>
+		<name>GpsSensor</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Sensor</superclass>
+	</class>
+
+	<class>
+		<name>NfcSensor</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Sensor</superclass>
+		<template_slot>nfc_Relations</template_slot>
+	</class>
+
+	<class>
+		<name>PhoneCallSensor</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Sensor</superclass>
+	</class>
+
+	<class>
+		<name>PhoneStateSensor</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Sensor</superclass>
+	</class>
+
+	<class>
+		<name>PowerConnectionSensor</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Sensor</superclass>
+	</class>
+
+	<class>
+		<name>WifiConnectionSensor</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Sensor</superclass>
+	</class>
+
+	<class>
+		<name>Survey</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>CapturingModule</superclass>
+		<template_slot>survey_Relations</template_slot>
+	</class>
+
+	<class>
+		<name>Sink</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Abstract</value>
+		</own_slot_value>
+		<superclass>ProjectSession</superclass>
+	</class>
+
+	<class>
+		<name>DataSink</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Sink</superclass>
+	</class>
+
+	<class>
+		<name>AudioSink</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>Sink</superclass>
+	</class>
+
+	<class>
+		<name>Trigger</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>ProjectSession</superclass>
+		<template_slot>matches</template_slot>
+		<template_slot>sampleFrequency</template_slot>
+		<template_slot>periodTime</template_slot>
+		<template_slot>taskType</template_slot>
+		<template_slot>trigger_Relations</template_slot>
+	</class>
+
+	<class>
+		<name>ConfigurationVariablesFilter</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>:THING</superclass>
+		<template_slot>type</template_slot>
+		<template_slot>value</template_slot>
+		<template_slot>vector</template_slot>
+		<template_slot>matriz</template_slot>
+	</class>
+
+	<class>
+		<name>n</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">&quot;n&quot; is the quantity of samples to smooth the received signal.</value>
+		</own_slot_value>
+		<superclass>ConfigurationVariablesFilter</superclass>
+		<template_facet_value>
+			<slot_reference>type</slot_reference>
+			<facet_reference>:DOCUMENTATION-IN-FRAME</facet_reference>
+			<value value_type="string">&quot;n&quot; is the quantity of samples necessary to smooth the received signal.</value>
+		</template_facet_value>
+		<template_facet_value>
+			<slot_reference>type</slot_reference>
+			<facet_reference>:DEFAULTS</facet_reference>
+			<value value_type="string">Short</value>
+		</template_facet_value>
+		<template_facet_value>
+			<slot_reference>type</slot_reference>
+			<facet_reference>:VALUE-TYPE</facet_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">String</value>
+			<value value_type="string">Float</value>
+			<value value_type="string">Long</value>
+			<value value_type="string">Double</value>
+			<value value_type="string">Integer</value>
+			<value value_type="string">Char</value>
+			<value value_type="string">Short</value>
+		</template_facet_value>
+		<template_facet_value>
+			<slot_reference>value</slot_reference>
+			<facet_reference>:DEFAULTS</facet_reference>
+			<value value_type="string">15</value>
+		</template_facet_value>
+	</class>
+
+	<class>
+		<name>nivel</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">es el nivel (en m/seg^2) para marcar un evento de paso.</value>
+		</own_slot_value>
+		<superclass>ConfigurationVariablesFilter</superclass>
+		<template_facet_value>
+			<slot_reference>type</slot_reference>
+			<facet_reference>:DEFAULTS</facet_reference>
+			<value value_type="string">Double</value>
+		</template_facet_value>
+		<template_facet_value>
+			<slot_reference>value</slot_reference>
+			<facet_reference>:DEFAULTS</facet_reference>
+			<value value_type="string">25</value>
+		</template_facet_value>
+	</class>
+
+	<class>
+		<name>Conditions</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>:THING</superclass>
+		<template_slot>Variable_Name</template_slot>
+		<template_slot>operator</template_slot>
+		<template_slot>value1</template_slot>
+		<template_slot>value2 (optional)</template_slot>
+	</class>
+
+	<class>
+		<name>Operators</name>
+		<type>:STANDARD-CLASS</type>
+		<own_slot_value>
+			<slot_reference>:ROLE</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<superclass>:THING</superclass>
+		<template_slot>boolean</template_slot>
+		<template_slot>textOperators</template_slot>
+		<template_slot>numeric</template_slot>
+		<template_slot>date</template_slot>
+	</class>
+
+	<slot>
+		<name>acc_Relations</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">VectorMagFilter</value>
+			<value value_type="class">Trigger</value>
+			<value value_type="class">DataSink</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>activityCounts_Relations</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">DataSink</value>
+			<value value_type="class">Trigger</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>assembleData_into</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">Sink</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>audioSensor_Relations</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">AudioSink</value>
+			<value value_type="class">Trigger</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>boolean</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">isTrue</value>
+			<value value_type="string">isFalse</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>capturing_module_relations</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:DOCUMENTATION</slot_reference>
+			<value value_type="string">kk
+kklllll
+;;kll
+
+l</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">Sensor-Filter  Relation</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>configuration_var</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">ConfigurationVariablesFilter</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>date</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">is</value>
+			<value value_type="string">is_not</value>
+			<value value_type="string">is_after</value>
+			<value value_type="string">is_before</value>
+			<value value_type="string">is_in_the_last</value>
+			<value value_type="string">is_not_in_the_last</value>
+			<value value_type="string">is_in_the_range</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Filter_</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>INCENSE_EXECUTION_MODEL</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">Sink</value>
+			<value value_type="class">Trigger</value>
+			<value value_type="class">CapturingModule</value>
+			<value value_type="class">:THING</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>matches</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">any</value>
+			<value value_type="string">all</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>matriz</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-DEFAULTS</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Boolean</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Name</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>name</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>nfc_Relations</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">Trigger</value>
+			<value value_type="class">DataSink</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>numeric</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">is</value>
+			<value value_type="string">is_not</value>
+			<value value_type="string">is_greater_than</value>
+			<value value_type="string">is_less_than</value>
+			<value value_type="string">is_in_the_range</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>operator</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">Operators</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>periodTime</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Float</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>PROJECT_SESSION</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">Filter</value>
+			<value value_type="class">Sensor</value>
+			<value value_type="class">Survey</value>
+			<value value_type="class">AudioSink</value>
+			<value value_type="class">DataSink</value>
+			<value value_type="class">Trigger</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>sampleFrequency</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Float</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>survey_Relations</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">DataSink</value>
+			<value value_type="class">Trigger</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>taskType</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">AccelerometerSensor</value>
+			<value value_type="string">GyroscopeSensor</value>
+			<value value_type="string">AudioSensor</value>
+			<value value_type="string">BluetoothSensor</value>
+			<value value_type="string">GpsSensor</value>
+			<value value_type="string">CallSensor</value>
+			<value value_type="string">StateSensor</value>
+			<value value_type="string">WifiScanSensor</value>
+			<value value_type="string">WifiConnectionSensor</value>
+			<value value_type="string">AccelerometerMeanFilter</value>
+			<value value_type="string">DataSink</value>
+			<value value_type="string">AudioSink</value>
+			<value value_type="string">SessionTrigger</value>
+			<value value_type="string">SurveyTrigger</value>
+			<value value_type="string">Trigger</value>
+			<value value_type="string">ShakeFilter</value>
+			<value value_type="string">BluetoothConnectionSensor</value>
+			<value value_type="string">NfcSensor</value>
+			<value value_type="string">WifiTimeConnectedFilter</value>
+			<value value_type="string">StopTrigger</value>
+			<value value_type="string">TimeSensor</value>
+			<value value_type="string">PowerConnectionSensor</value>
+			<value value_type="string">MovementFilter</value>
+			<value value_type="string">FalseTimerFilter</value>
+			<value value_type="string">MovementTimeFilter</value>
+			<value value_type="string">SurveySensor</value>
+			<value value_type="string">StepsAccFilter</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>textOperators</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">contains</value>
+			<value value_type="string">does_not_contains</value>
+			<value value_type="string">is</value>
+			<value value_type="string">is_not</value>
+			<value value_type="string">starts_with</value>
+			<value value_type="string">ends_with</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>trigger_Relations</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">CapturingModule</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>triggered</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Boolean</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>type</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">String</value>
+			<value value_type="string">Float</value>
+			<value value_type="string">Long</value>
+			<value value_type="string">Double</value>
+			<value value_type="string">Integer</value>
+			<value value_type="string">Char</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>value</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>value1</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>value2 (optional)</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>Variable_Name</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>vector</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-MINIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-DEFAULTS</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Boolean</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>vectorMagFilter_Relations</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">ActivityCountsFilter</value>
+			<value value_type="class">Trigger</value>
+			<value value_type="class">DataSink</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:ASSOCIATED-FACET</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-INVERSE</slot_reference>
+			<value value_type="slot">:ASSOCIATED-SLOT</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">:FACET</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:DIRECT-SUBSLOTS</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-INVERSE</slot_reference>
+			<value value_type="slot">:DIRECT-SUPERSLOTS</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">:SLOT</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:DIRECT-SUPERSLOTS</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-INVERSE</slot_reference>
+			<value value_type="slot">:DIRECT-SUBSLOTS</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">:SLOT</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:DOCUMENTATION</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:ASSOCIATED-FACET</slot_reference>
+			<value value_type="facet">:DOCUMENTATION-IN-FRAME</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:FROM</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">:THING</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:ROLE</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-DEFAULTS</slot_reference>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Symbol</value>
+			<value value_type="string">Abstract</value>
+			<value value_type="string">Concrete</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:SLOT-CONSTRAINTS</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:ASSOCIATED-FACET</slot_reference>
+			<value value_type="facet">:CONSTRAINTS</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">:CONSTRAINT</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:SLOT-DEFAULTS</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:ASSOCIATED-FACET</slot_reference>
+			<value value_type="facet">:DEFAULTS</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:SLOT-INVERSE</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-INVERSE</slot_reference>
+			<value value_type="slot">:SLOT-INVERSE</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">:SLOT</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:SLOT-MAXIMUM-CARDINALITY</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-DEFAULTS</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:ASSOCIATED-FACET</slot_reference>
+			<value value_type="facet">:MAXIMUM-CARDINALITY</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Integer</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:SLOT-MINIMUM-CARDINALITY</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:ASSOCIATED-FACET</slot_reference>
+			<value value_type="facet">:MINIMUM-CARDINALITY</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Integer</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:SLOT-NUMERIC-MAXIMUM</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:ASSOCIATED-FACET</slot_reference>
+			<value value_type="facet">:NUMERIC-MAXIMUM</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Float</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:SLOT-NUMERIC-MINIMUM</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:ASSOCIATED-FACET</slot_reference>
+			<value value_type="facet">:NUMERIC-MINIMUM</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Float</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:SLOT-VALUES</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:ASSOCIATED-FACET</slot_reference>
+			<value value_type="facet">:VALUES</value>
+		</own_slot_value>
+	</slot>
+
+	<slot>
+		<name>:TO</name>
+		<type>:STANDARD-SLOT</type>
+		<own_slot_value>
+			<slot_reference>:SLOT-MAXIMUM-CARDINALITY</slot_reference>
+			<value value_type="integer">1</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:SLOT-VALUE-TYPE</slot_reference>
+			<value value_type="string">Instance</value>
+			<value value_type="class">:THING</value>
+		</own_slot_value>
+	</slot>
+
+	<simple_instance>
+		<name>OntoIncense_Class4</name>
+		<type>Sensor-Filter  Relation</type>
+		<own_slot_value>
+			<slot_reference>:TO</slot_reference>
+			<value value_type="simple_instance">OntoIncense_Class117</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class5</name>
+		<type>Sensor-Filter  Relation</type>
+		<own_slot_value>
+			<slot_reference>:FROM</slot_reference>
+			<value value_type="simple_instance">OntoIncense_Class117</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>:TO</slot_reference>
+			<value value_type="simple_instance">OntoIncense_Class118</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class42</name>
+		<type>ProjectSession</type>
+		<own_slot_value>
+			<slot_reference>Name</slot_reference>
+			<value value_type="string">ProblematicBehaviors</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>PROJECT_SESSION</slot_reference>
+			<value value_type="simple_instance">OntoIncense_Class2</value>
+			<value value_type="simple_instance">OntoIncense_Class3</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class116</name>
+		<type>ProjectSession</type>
+		<own_slot_value>
+			<slot_reference>Name</slot_reference>
+			<value value_type="string">MonitoringActivityCounts</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>PROJECT_SESSION</slot_reference>
+			<value value_type="simple_instance">OntoIncense_Class117</value>
+			<value value_type="simple_instance">OntoIncense_Class118</value>
+			<value value_type="simple_instance">OntoIncense_Class6</value>
+			<value value_type="simple_instance">OntoIncense_Class13</value>
+			<value value_type="simple_instance">OntoIncense_Class18</value>
+			<value value_type="simple_instance">OntoIncense_Class21</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class118</name>
+		<type>VectorMagFilter</type>
+		<own_slot_value>
+			<slot_reference>vectorMagFilter_Relations</slot_reference>
+			<value value_type="simple_instance">OntoIncense_Class13</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>periodTime</slot_reference>
+			<value value_type="float">6.0</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>sampleFrequency</slot_reference>
+			<value value_type="float">5.0</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>configuration_var</slot_reference>
+			<value value_type="simple_instance">OntoIncense_Class119</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Name</slot_reference>
+			<value value_type="string">VectorMag</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class13</name>
+		<type>ActivityCountsFilter</type>
+		<own_slot_value>
+			<slot_reference>Name</slot_reference>
+			<value value_type="string">ActivityCounts</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class117</name>
+		<type>AccelerometerSensor</type>
+		<own_slot_value>
+			<slot_reference>acc_Relations</slot_reference>
+			<value value_type="simple_instance">OntoIncense_Class118</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Name</slot_reference>
+			<value value_type="string">Acc</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class2</name>
+		<type>AccelerometerSensor</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class3</name>
+		<type>AudioSensor</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class18</name>
+		<type>NfcSensor</type>
+		<own_slot_value>
+			<slot_reference>nfc_Relations</slot_reference>
+			<value value_type="simple_instance">OntoIncense_Class6</value>
+			<value value_type="simple_instance">OntoIncense_Class21</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Name</slot_reference>
+			<value value_type="string">NFC</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class6</name>
+		<type>Trigger</type>
+		<own_slot_value>
+			<slot_reference>trigger_Relations</slot_reference>
+			<value value_type="simple_instance">OntoIncense_Class117</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Name</slot_reference>
+			<value value_type="string">walk</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class21</name>
+		<type>Trigger</type>
+		<own_slot_value>
+			<slot_reference>taskType</slot_reference>
+			<value value_type="string">StopTrigger</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>trigger_Relations</slot_reference>
+			<value value_type="simple_instance">OntoIncense_Class117</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>Name</slot_reference>
+			<value value_type="string">stop_walking</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class70</name>
+		<type>ConfigurationVariablesFilter</type>
+		<own_slot_value>
+			<slot_reference>type</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>value</slot_reference>
+			<value value_type="string">estaEsPrueba</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>vector</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>matriz</slot_reference>
+			<value value_type="boolean">true</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class72</name>
+		<type>ConfigurationVariablesFilter</type>
+		<own_slot_value>
+			<slot_reference>type</slot_reference>
+			<value value_type="string">String</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>value</slot_reference>
+			<value value_type="string">var1prueba</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>vector</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>matriz</slot_reference>
+			<value value_type="boolean">true</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class73</name>
+		<type>ConfigurationVariablesFilter</type>
+		<own_slot_value>
+			<slot_reference>type</slot_reference>
+			<value value_type="string">Boolean</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>value</slot_reference>
+			<value value_type="string">var2prueba</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>vector</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>matriz</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class110</name>
+		<type>ConfigurationVariablesFilter</type>
+		<own_slot_value>
+			<slot_reference>vector</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>matriz</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class112</name>
+		<type>ConfigurationVariablesFilter</type>
+		<own_slot_value>
+			<slot_reference>vector</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>matriz</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class119</name>
+		<type>ConfigurationVariablesFilter</type>
+		<own_slot_value>
+			<slot_reference>vector</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>matriz</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class1</name>
+		<type>n</type>
+		<own_slot_value>
+			<slot_reference>type</slot_reference>
+			<value value_type="string">Short</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>value</slot_reference>
+			<value value_type="string">15</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>vector</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+		<own_slot_value>
+			<slot_reference>matriz</slot_reference>
+			<value value_type="boolean">false</value>
+		</own_slot_value>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class114</name>
+		<type>Conditions</type>
+	</simple_instance>
+
+	<simple_instance>
+		<name>OntoIncense_Class121</name>
+		<type>Conditions</type>
+		<own_slot_value>
+			<slot_reference>Variable_Name</slot_reference>
+			<value value_type="string">message</value>
+		</own_slot_value>
+	</simple_instance>
+</knowledge_base>

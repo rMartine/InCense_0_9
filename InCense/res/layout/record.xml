@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center">
+
+    <include
+        layout="@layout/header_logo_text"
+        android:id="@+id/layout_header_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dip" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dip">
+
+        <TextView
+            android:id="@+id/textview_username_label"
+            android:text="@string/username_label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"></TextView>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/textview_username"
+            android:text="@string/unknown_username"
+            android:textAppearance="@style/big_text"
+            android:layout_weight="1"></TextView>
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        android:visibility="invisible"
+        android:progress="0">
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/textview_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minLines="2"
+        android:layout_gravity="center"
+        android:text="@string/record_instructions"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:hapticFeedbackEnabled="true"
+        android:layout_width="wrap_content"
+        android:text="@string/start_session"
+        android:id="@+id/button_start"
+        android:layout_gravity="center"></Button>
+
+</LinearLayout>
